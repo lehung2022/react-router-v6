@@ -34,7 +34,7 @@ function App() {
       id: 4,
       title: "My 4th Post",
       datetime: "June 28th, 2023 16:44 PM",
-      body: "There are no Logical Reasons to choose the Communists. Yet, Northerners chose them anyway. What a bunch of idiots"
+      body: "Everything nowadays is about Feelings and Moods. No one controls them anymore. And, that leads to total Chaos"
     }
   ])
   const [search, setSearch] = useState('');

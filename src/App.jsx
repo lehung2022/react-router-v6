@@ -44,9 +44,9 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const filteredResults = posts.filter((post) =>
-      ((post.body).toLowerCase()).includes(search.toLowerCase())
-      || ((post.title).toLowerCase()).includes(search.toLowerCase()));
+    const filteredResults = posts?.filter((post) =>
+      ((post.body).toLowerCase())?.includes(search.toLowerCase())
+      || ((post.title).toLowerCase())?.includes(search.toLowerCase()));
 
     setSearchResults(filteredResults.reverse());
   }, [posts, search])
@@ -64,7 +64,7 @@ function App() {
   }
 
   const handleDelete = (id) => {
-    const postsList = posts.filter(post => post.id !== id);
+    const postsList = posts?.filter(post => post.id !== id);
     setPosts(postsList);
     navigate('/');
   }
